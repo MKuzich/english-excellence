@@ -4,16 +4,21 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
+@import url('./utils/fonts.css');
+@import url('./utils/variables.css');
+@import url('./utils/normalize.css');
+@import url('./utils/reset.css');
+@import url('./base/common.css');
+@import url('./components/header.css');
+@import url('./components/footer.css');
+@import url('./components/about.css');
+@import url('./components/contact.css');
+@import url('./components/cta.css');
+@import url('./components/hero.css');
+@import url('./components/prices.css');
+@import url('./components/teachers.css');
+@import url('./components/testimonials.css');
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
 

@@ -21,6 +21,10 @@
 @import url('./components/prices.css');
 @import url('./components/teachers.css');
 @import url('./components/testimonials.css');
+@import url('./components/button.css');
+@import url('./components/menu.css');
+
+
 :root {
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);

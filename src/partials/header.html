@@ -7,7 +7,19 @@
       logo-modifier-point="logo-dark"
 
     />
-    <nav class="nav">
+    <nav class="nav mobile-menu js-mobile-menu" aria-hidden="true">
+
+      <loader
+        file="partials/button.html"
+        btn-class-name="menu-btn close-menu-btn js-close-menu"
+        btn-content=""
+        btn-label="Close menu button"
+        has-icon="menu-btn-icon"
+        icon-path="img/sprite.svg#icon-x_sm"
+        controls="mobile-menu"
+        is-open=""
+      />
+
       <ul class="nav-menu">
         <li class="nav-menu-item"><a href="#about">About us</a></li>
         <li class="nav-menu-item"><a href="prices">Our lessons</a></li>
@@ -17,5 +29,17 @@
       </ul>
       <loader file="partials/socials.html" location="header-socials" />
     </nav>
+
+    <loader
+      file="partials/button.html"
+      btn-class-name="menu-btn js-open-menu"
+      btn-content=""
+      btn-label="Open menu button"
+      has-icon="menu-btn-icon"
+      icon-path="img/sprite.svg#icon-nav_sm"
+      controls="mobile-menu"
+      is-open="false"
+    />
+
   </div>
 </header>

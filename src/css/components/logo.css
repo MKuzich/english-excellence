@@ -1,0 +1,15 @@
+.logo {
+  margin-right: 76px;
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--primary-color);
+}
+.logo-dark {
+  color: var(--black-color);
+}
+.logo-light {
+  color: var(--white-color);
+}

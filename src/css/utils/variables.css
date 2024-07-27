@@ -7,6 +7,7 @@
   --secondary-light-color: #d4fde1;
   --text-color: rgba(18, 20, 23, 0.5);
   --border-color: rgba(18, 20, 23, 0.1);
+  --border-hover-color: rgba(77, 194, 116, 0.1);
   --inactive-color: rgba(18, 20, 23, 0.2);
   --light-white-color: rgba(255, 255, 255, 0.7);
   --white-border-color: rgba(255, 255, 255, 0.5);
@@ -27,4 +28,6 @@
   --transform-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --box-shadow-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --opacity-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --icon-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }

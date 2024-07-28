@@ -1,8 +1,136 @@
 .hero {
+  background-color: rbg(var(--white-color));
+  background-image: url(../img/hero/mb-hero.jpg);
+  border-radius: 16px;
+  min-width: 320px;
+  max-width: 375px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  height: 709px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 105%;
+  color: rgb(255, 255, 255);
+  width: 295px;
+  margin-bottom: 40px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero/mb-hero-2x.jpg);
+  }
+}
+
+.hero-span {
+  color: rgb(190, 232, 204);
+}
+
+.hero-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-family: 'Manrope', sans-serif;
+  line-height: 171%;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 12px;
+  padding: 14px 87px;
+  height: 52px;
+  margin: auto;
+  display: block;
+  border: none;
+  transition: background-color var(--anim-time);
+}
+
+.btn-accent {
+  margin-bottom: 72px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.btn-accent:focus,
+.btn-accent:hover {
+  background-color: var(--accent-color);
+}
+
+.hero-link-circle {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  animation: circle-rotate 600ms linear 2600ms both;
+}
+
+.hero-link-icon {
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+  transition: var(--icon-transition);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../img/hero/tb-hero.jpg);
+    max-width: 768px;
+    height: 704px;
+    border-radius: 30px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../img/hero/tb-hero-2x.jpg);
+    }
+  }
+
+  .hero-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .hero-title {
+    font-size: 60px;
+    width: 488px;
+    line-height: 117%;
+  }
+
+  .hero-link-circle {
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .hero {
+    background-image: url(../img/hero/hero.jpg);
+    max-width: 1152px;
+    height: 629px;
     padding-bottom: 96px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../img/hero/hero-2x.jpg);
+    }
+  }
+  .hero-title {
+    width: 564px;
   }
 }

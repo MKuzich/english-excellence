@@ -1,6 +1,6 @@
-<section class="contact">
+<section class="contact" id="contact">
   <div class="container">
-    <h2 class="contact-title">Leave an application</h2>
+    <h2 class="contact-title">Leave an <span>application</span></h2>
     <p class="contact-description">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
@@ -9,15 +9,30 @@
       <div class="contact-info-card">
         <div class="contact-card-promo">
           <div class="contact-card-promo-logo">
-            <img
-              srcset="
-                ./img/contact/img-1@1x.png 1x,
-                ./img/contact/img-1@2x.png 2x
-              "
-              src="./img/contact/img-1@1x.png"
-              alt="Happy little girl photo"
-              width="492"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/contact/img-1@1x.webp 1x,
+                  ./img/contact/img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/contact/img-1@1x.png 1x,
+                  ./img/contact/img-1@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./img/contact/img-1@1x.png"
+                alt="Happy little girl photo"
+                width="492"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="contact-promo">
             <h3 class="contact-promo-title">1000</h3>

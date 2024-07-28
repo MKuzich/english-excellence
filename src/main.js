@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     modules: [Autoplay],
     loop: true,
     spaceBetween: 32,
+    slidesPerView: 1,
+    grabCursor: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,

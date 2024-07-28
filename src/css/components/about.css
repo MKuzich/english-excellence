@@ -1,145 +1,134 @@
 .about-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 112%;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--black-color);
-    margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black-color);
+  margin-bottom: 16px;
 }
 
 .about-title span {
-    position: relative;
+  position: relative;
 }
 
 .about-title span::before {
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 30%;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 30%;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
 }
 
 .about-description {
-    max-width: 647px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.66;
-    text-align: center;
-    color: var(--text-color);
+  max-width: 647px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66;
+  text-align: center;
+  color: var(--text-color);
 }
 
 .about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-
-
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 0;
 }
 
 .feature {
-    background: var(--gray-color);
-    border-radius: 16px;
-    padding: 32px;
+  background: var(--gray-color);
+  border-radius: 16px;
+  padding: 32px;
 
-    width: 100%;
-
+  width: 100%;
 }
 
 .feature-card-title {
-    margin-bottom: 16px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: var(--primary-color);
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--primary-color);
 }
 
 .feature-card-text {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: var(--black-color);
-
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--black-color);
 }
 
-
 .feature img {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    display: block;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
 }
 
 .about-wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
 }
 
 .about-image {
-    width: 100%;
-    height: 211px;
-    background: var(--primary-color) url('./img/about/about.png') no-repeat center center;
-    background-size: contain;
-    border-radius: 16px;
+  width: 100%;
+  height: 211px;
+  background: var(--primary-color) url('/img/about/about.png') no-repeat center
+    center;
+  background-size: contain;
+  border-radius: 16px;
 }
 
 @media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    gap: 32px 32px;
+  }
 
+  .about-image {
+    padding: 16px 0;
+  }
 
-    .features {
-        flex-direction: row;
-        gap: 32px 32px;
+  .about-wrapper {
+    gap: 32px 0;
+  }
 
-    }
-
-    .about-image {
-        padding: 16px 0;
-    }
-
-    .about-wrapper {
-
-        gap: 32px 0;
-    }
-
- 
-    .feature {
-        width: calc((100% - 32px) / 2);
-    }
+  .feature {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
 @media (min-width: 1024px) {
-    .about-image {
-        max-width: 310px;
-        height: auto;
-    }
+  .about-image {
+    max-width: 310px;
+    height: auto;
+  }
 
-    .about-wrapper {
-        flex-wrap: nowrap;
-        flex-direction: row;
-        gap: 0 32px;
-    }
-
-
+  .about-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0 32px;
+  }
 }

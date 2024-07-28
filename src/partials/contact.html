@@ -39,6 +39,8 @@
                 name="user-name"
                 id="user-name"
                 placeholder="Name"
+                pattern="\w{1,60}"
+                required
               />
             </div>
           </div>
@@ -50,6 +52,7 @@
                 name="user-email"
                 id="user-email"
                 placeholder="Email"
+                required
               />
             </div>
           </div>
@@ -61,6 +64,9 @@
                 name="user-phone"
                 id="user-phone"
                 placeholder="Phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="123-456-7890"
+                required
               />
             </div>
           </div>
@@ -81,28 +87,49 @@
               <li class="teacher-list-item">
                 <label class="teacher-item-label" for="teacher-1"
                   >Maria
-                  <input type="radio" id="teacher-1" name="teacher" checked />
+                  <input
+                    type="radio"
+                    id="teacher-1"
+                    name="teacher"
+                    value="teacher-1"
+                    checked
+                  />
                   <span class="checkmark"></span>
                 </label>
               </li>
               <li class="teacher-list-item">
                 <label class="teacher-item-label" for="teacher-2"
                   >Artem
-                  <input type="radio" id="teacher-2" name="teacher" />
+                  <input
+                    type="radio"
+                    id="teacher-2"
+                    name="teacher"
+                    value="teacher-2"
+                  />
                   <span class="checkmark"></span>
                 </label>
               </li>
               <li class="teacher-list-item">
                 <label class="teacher-item-label" for="teacher-3"
                   >Ilona
-                  <input type="radio" id="teacher-3" name="teacher" />
+                  <input
+                    type="radio"
+                    id="teacher-3"
+                    name="teacher"
+                    value="teacher-3"
+                  />
                   <span class="checkmark"></span>
                 </label>
               </li>
               <li class="teacher-list-item">
                 <label class="teacher-item-label" for="teacher-4"
                   >Volodymyr
-                  <input type="radio" id="teacher-4" name="teacher" />
+                  <input
+                    type="radio"
+                    id="teacher-4"
+                    name="teacher"
+                    value="teacher-4"
+                  />
                   <span class="checkmark"></span>
                 </label>
               </li>

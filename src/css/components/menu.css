@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1279px) {
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     min-width: 240px;
@@ -40,6 +40,19 @@
         color: var(--light-white-color);
       }
     }
+  }
+/* 
+  .mobile-menu::backdrop {
+    background-color: var(--backdrop-bgd-color);
+  } */
+   .mobile-menu::before {
+    content: "";
+    background: var(--backdrop-bgd-color);
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {

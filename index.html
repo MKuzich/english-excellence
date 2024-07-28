@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/english-excellence/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/english-excellence/assets/vendor-04e4c901.js">
     <link rel="stylesheet" href="/english-excellence/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/english-excellence/assets/index-4b00d4ed.css">
+    <link rel="stylesheet" href="/english-excellence/assets/index-5eedb157.css">
   </head>
   <body>
     <header class="header">
@@ -153,9 +153,9 @@
   <div class="container"></div>
 </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
   <div class="container">
-    <h2 class="contact-title">Leave an application</h2>
+    <h2 class="contact-title">Leave an <span>application</span></h2>
     <p class="contact-description">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
@@ -164,12 +164,24 @@
       <div class="contact-info-card">
         <div class="contact-card-promo">
           <div class="contact-card-promo-logo">
-            <img
-              srcset="/english-excellence/assets/img-1@1x-6d8e9769.png 1x, /english-excellence/assets/img-1@2x-6e526bc2.png 2x"
-              src="/english-excellence/assets/img-1@1x-6d8e9769.png"
-              alt="Happy little girl photo"
-              width="492"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="/english-excellence/assets/img-1@1x-302845ba.webp 1x, /english-excellence/assets/img-1@2x-b903f0be.webp 2x"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="/english-excellence/assets/img-1@1x-7306209a.png 1x, /english-excellence/assets/img-1@2x-1c8498c3.png 2x"
+                type="image/png"
+              />
+              <img
+                src="/english-excellence/assets/img-1@1x-7306209a.png"
+                alt="Happy little girl photo"
+                width="492"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="contact-promo">
             <h3 class="contact-promo-title">1000</h3>

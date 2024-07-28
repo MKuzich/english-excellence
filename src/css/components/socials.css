@@ -19,7 +19,7 @@
   border-radius: 10px;
   border: 1px solid var(--border-white-color);
 
-   transition: var(--border-transition);
+  transition: var(--border-transition);
 
   &:hover,
   &:focus {
@@ -30,31 +30,33 @@
 .socials-icon {
   fill: var(--white-color);
 
-  transition: var(--icon-transition);
+  transition: var(--icon-transition, --transform-transition);
 
   &:hover,
   &:focus {
     fill: var(--light-white-color);
+    transform: scale(1.02);
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .socials-link {
-  
-  border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 
-  &:hover,
-  &:focus {
-    border-color: var(--border-hover-color);
+    &:hover,
+    &:focus {
+      border-color: var(--border-hover-color);
+    }
   }
-}
 
-.socials-icon {
-  fill: var(--black-color);
+  .socials-icon {
+    fill: var(--black-color);
+    transition: var(--icon-transition, --transform-transition);
 
-  &:hover,
-  &:focus {
-    fill: var(--primary-color);
+    &:hover,
+    &:focus {
+      fill: var(--primary-color);
+      transform: scale(1.02);
+    }
   }
-}
 }

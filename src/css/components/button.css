@@ -28,6 +28,12 @@
   margin-left: auto;
   background-color: transparent;
   stroke: var(--black-color);
+  transition: var(--menu-icon-transition);
+
+  &:hover,
+  &:focus {
+    stroke: var(--primary-color);
+  }
 
   svg {
     width: 32px;
@@ -54,11 +60,12 @@
 
   min-width: 32px;
   min-height: 32px;
-  fill: var(--white-color);
-  transition: var(--icon-transition);
+
+  stroke: var(--white-color);
+  transition: var(--menu-icon-transition);
 
   &:hover,
   &:focus {
-    fill: var(--light-white-color);
+    stroke: var(--light-white-color);
   }
 }

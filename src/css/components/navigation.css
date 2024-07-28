@@ -26,5 +26,12 @@
 
   .nav-menu-item {
     color: var(--black-color);
+    transition: var(--color-transition, --transform-transition);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+      transform: scale(1.02);
+    }
   }
 }

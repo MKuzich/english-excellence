@@ -4,16 +4,12 @@
 
   flex-grow: 1;
 }
-@media screen and (min-width: 1280px) {
-  .nav {
-    justify-content: space-between;
-  }
-}
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .nav-menu-item {
   display: block;
   padding: 24px 0;
@@ -21,6 +17,14 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--black-color);
 }
 
+@media screen and (min-width: 1280px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-menu-item {
+    color: var(--black-color);
+  }
+}

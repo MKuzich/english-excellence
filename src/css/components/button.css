@@ -22,11 +22,29 @@
 }
 
 .menu-btn {
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 32px;
+  min-height: 32px;
   padding: 0;
   margin-left: auto;
   background-color: transparent;
+  stroke: var(--black-color);
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    min-width: 40px;
+    min-height: 28px;
+
+    svg {
+      width: 40px;
+      height: 28px;
+    }
+  }
 }
 
 .close-menu-btn {
@@ -36,8 +54,11 @@
 
   min-width: 32px;
   min-height: 32px;
+  fill: var(--white-color);
+  transition: var(--icon-transition);
 
-  svg {
-    fill: var(--white-color);
+  &:hover,
+  &:focus {
+    fill: var(--light-white-color);
   }
 }

@@ -23,7 +23,7 @@
 @import url('./components/testimonials.css');
 @import url('./components/button.css');
 @import url('./components/menu.css');
-
+@import url('./components/notification.css');
 
 :root {
   color: #242424;

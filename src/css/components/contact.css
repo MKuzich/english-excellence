@@ -53,6 +53,7 @@
 .contact-promo {
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 40px;
 
 }
 .contact-card-promo-logo {
@@ -152,7 +153,6 @@
 
 .contact-teacher {
     margin-top: 20px;
-
 }
 .contact-teacher-title {
     font-weight: 600;
@@ -184,6 +184,7 @@
 
 .teacher-item-label {
     padding-left: 28px;
+    cursor: pointer;
 }
 
 .checkmark {
@@ -269,13 +270,14 @@
     }
     .contact-form-input {
         max-width: 500px;
+        height: 56px;
     }
     .contact-form-comment {
         max-width: 500px;
     }
     .contact-teacher {
-        margin-top: 32px;
         margin: 0 auto;
+        margin-top: 32px;
         max-width: 500px;
     }
     .teacher-list {
@@ -288,6 +290,7 @@
     }
     .btn-send {
         margin-top: 32px;
+        height: 60px;
     }
     .form-agreement-text {
         max-width: 500px;

@@ -100,11 +100,12 @@
 @media screen and (min-width: 768px) {
   .cta .content-wrapper {
     overflow: visible;
-    padding: 64px 32px 92px;
+    padding: 64px 18px 92px;
   }
 
   .cta .cta-title {
     margin-bottom: 84px;
+    padding: 0 14px;
   }
 
   .usp-wrapper::before,

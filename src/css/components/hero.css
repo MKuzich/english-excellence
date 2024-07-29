@@ -47,7 +47,6 @@
   font-size: 14px;
   border-radius: 12px;
   padding: 14px 87px;
-  height: 52px;
   margin: auto;
   display: inline-flex;
   border: none;
@@ -107,6 +106,7 @@
     font-size: 60px;
     width: 488px;
     line-height: 117%;
+    margin-bottom: 32px;
   }
 
   .hero-link-circle {

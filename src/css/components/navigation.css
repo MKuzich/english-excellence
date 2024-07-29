@@ -1,9 +1,9 @@
 .nav {
   display: flex;
   align-items: center;
-
   flex-grow: 1;
 }
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -25,13 +25,34 @@
   }
 
   .nav-menu-item {
+    cursor: pointer;
     color: var(--black-color);
     transition: var(--color-transition, --transform-transition);
+    position: relative;
+  }
 
-    &:hover,
-    &:focus {
-      color: var(--primary-color);
-      transform: scale(1.02);
-    }
+  .nav-menu-item a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-menu-item a:hover,
+  .nav-menu-item a:focus {
+    color: var(--primary-color);
+    transform: scale(1.02);
+  }
+
+  .nav-menu-item a.active::after {
+    content: '';
+    display: block;
+    width: 37px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
   }
 }

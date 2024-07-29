@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     modules: [Autoplay],
     loop: true,
     spaceBetween: 32,
+    slidesPerView: 1,
+    grabCursor: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -25,31 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
-
-const mobileMenuRefs = {
-  mobileMenu: document.querySelector('.js-mobile-menu'),
-  openMenuBtn: document.querySelector('.js-open-menu'),
-  closeMenuBtn: document.querySelector('.js-close-menu'),
-  backdrop: document.querySelector('.js-backdrop-menu'),
-};
-
-const toggleMenu = () => {
-  const isMenuOpen =
-    mobileMenuRefs.openMenuBtn.getAttribute('aria-expanded') === 'true' ||
-    false;
-
-  mobileMenuRefs.mobileMenu.classList.toggle('is-open');
-  mobileMenuRefs.mobileMenu.setAttribute('aria-hidden', isMenuOpen);
-  mobileMenuRefs.openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-
-  mobileMenuRefs.backdrop.classList.toggle('is-visible');
-
-  if (!isMenuOpen) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = '';
-  }
-};
 
 mobileMenuRefs.openMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuRefs.closeMenuBtn.addEventListener('click', toggleMenu);

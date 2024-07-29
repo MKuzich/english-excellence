@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--white-color);
-  background-image: url(../img/hero/mb-hero.jpg);
+  background-image: url(./img/hero/mb-hero.jpg);
   border-radius: 16px;
   min-width: 320px;
   max-width: 375px;
@@ -24,7 +24,7 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: url(../img/hero/mb-hero-2x.jpg);
+    background-image: url(./img/hero/mb-hero-2x.jpg);
   }
 }
 
@@ -90,7 +90,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: url(../img/hero/tb-hero.jpg);
+    background-image: url(./img/hero/tb-hero.jpg);
     max-width: 768px;
     height: 704px;
     border-radius: 30px;
@@ -99,7 +99,7 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero {
-      background-image: url(../img/hero/tb-hero-2x.jpg);
+      background-image: url(./img/hero/tb-hero-2x.jpg);
     }
   }
 
@@ -137,7 +137,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url(../img/hero/hero.jpg);
+    background-image: url(./img/hero/hero.jpg);
     max-width: 1152px;
     height: 629px;
     margin-bottom: 96px;
@@ -145,7 +145,7 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero {
-      background-image: url(../img/hero/hero-2x.jpg);
+      background-image: url(./img/hero/hero-2x.jpg);
     }
   }
   .hero-container {

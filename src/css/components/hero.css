@@ -38,6 +38,10 @@
 }
 
 .btn-hero {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: transparent;
   border: 1px solid transparent;
   font-family: 'Manrope', sans-serif;
@@ -47,10 +51,12 @@
   font-size: 14px;
   border-radius: 12px;
   padding: 14px 87px;
+  width: 295px;
+  height: 52px;
   margin: auto;
-  display: inline-flex;
   border: none;
   transition: background-color var(--anim-time);
+  white-space: nowrap;
 }
 
 .btn-accent {
@@ -79,7 +85,6 @@
 
 .hero-link-icon {
   fill: var(--primary-color);
-  stroke: var(--primary-color);
   transition: var(--icon-transition);
 }
 
@@ -116,10 +121,17 @@
     height: 48px;
   }
 
+  .hero-link-icon {
+    width: 24px;
+    height: 24px;
+  }
+
   .btn-hero {
     font-size: 18px;
     line-height: 156%;
-    margin-bottom: unset;
+    width: 306px;
+    height: 60px;
+    padding: 16px 64px;
   }
 }
 

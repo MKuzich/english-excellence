@@ -1,2 +1,220 @@
 .prices {
+    font-family: var(--font-family, "Manrope"), sans-serif;
+}
+
+.our-lessons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.prices-title {
+    color: var(--black-color);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.13;
+    letter-spacing: -0.02em;
+}
+
+.prices-title span {
+    position: relative;
+}
+
+.prices-title span::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 30%;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.prices-description {
+    margin: 0 auto 40px;
+    color: var(--text-color);
+    max-width: 665px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.prices-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.prices-item {
+    width: 336px;
+    height: 400px;
+    padding: 32px;
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prices-item-standard {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+}
+
+.prices-item-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--black-color);
+}
+
+.prices-item-price {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--black-color);
+    text-align: center;
+    letter-spacing: -0.02em;
+    line-height: 1.375;
+}
+
+.prices-item-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+    text-align: center;
+    flex-grow: 0;
+}
+
+.prices-item-standard .prices-item-title,
+.prices-item-standard .prices-item-price,
+.prices-item-standard .prices-item-description {
+    color: var(--white-color);
+}
+
+.btn-prices {
+    align-self: center;
+    margin-top: auto;
+    display: inline-flex;
+    padding: 14px 78px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.btn-prices-inverse {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+    .our-lessons-wrapper {
+        margin-bottom: 64px;
+    }
+
+    .prices {
+        padding-bottom: 100px;
+    }
+
+    .prices-title {
+        font-size: 40px;
+    }
+
+    .prices-description {
+        margin-bottom: 64px;
+        font-size: 18px;
+    }
+
+    .prices-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .prices-item {
+        width: 336px;
+        height: 404px;
+    }
+
+    .prices-item-price {
+        margin-bottom: 32px;
+    }
+
+    .prices-item-description {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .prices-item:nth-child(1) {
+        order: 1;
+    }
+
+    .prices-item:nth-child(2) {
+        order: 2;
+    }
+
+    .prices-item:nth-child(3) {
+        order: 3;
+        grid-column: 1;
+    }
+
+    .btn-prices {
+        padding: 16px 63px;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .prices {
+        padding-bottom: 150px;
+    }
+
+    .prices .container {
+        max-width: 1024px;
+    }
+
+    .prices-list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .prices-item {
+        width: 320px;
+        height: 404px;
+    }
+
+    .prices-item-price {
+        margin-bottom: 16px;
+    }
+
+    .prices-item-description {
+        margin-bottom: 32px;
+    }
+
+    .prices-item:nth-child(1),
+    .prices-item:nth-child(2),
+    .prices-item:nth-child(3) {
+        order: initial;
+    }
 }

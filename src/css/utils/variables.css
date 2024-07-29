@@ -15,8 +15,7 @@
   --border-white-color: rgba(255, 255, 255, 0.1);
   --white-label-color: rgba(255, 255, 255, 0.6);
   --gray-color: #f3f5f6;
-  --backdrop-color: rgba(18, 20, 23, 0.40);
-
+  --backdrop-color: rgba(18, 20, 23, 0.4);
 
   --linear-bg-gradient: linear-gradient(
     90deg,

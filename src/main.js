@@ -51,11 +51,9 @@ const toggleMenu = () => {
   }
 };
 
-
 mobileMenuRefs.openMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuRefs.closeMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuRefs.backdrop.addEventListener('click', toggleMenu);
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-menu-item a');

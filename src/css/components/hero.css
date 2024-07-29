@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--white-color);
+  background-color: var(--inactive-color);
   background-image: url(./img/hero/mb-hero.jpg);
   border-radius: 16px;
   min-width: 320px;
@@ -14,10 +14,6 @@
 }
 
 .hero-title {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 105%;
-  color: var(--white-color);
   width: 295px;
   margin-bottom: 40px;
 }
@@ -26,10 +22,6 @@
   .hero {
     background-image: url(./img/hero/mb-hero-2x.jpg);
   }
-}
-
-.hero-span {
-  color: rgb(190, 232, 204);
 }
 
 .hero-container {
@@ -107,10 +99,9 @@
     top: 45%;
     transform: translate(0, -50%);
   }
+
   .hero-title {
-    font-size: 60px;
     width: 488px;
-    line-height: 117%;
     margin-bottom: 32px;
   }
 
@@ -148,9 +139,11 @@
       background-image: url(./img/hero/hero-2x.jpg);
     }
   }
+
   .hero-container {
     padding: 0 64px;
   }
+
   .hero-title {
     width: 564px;
   }

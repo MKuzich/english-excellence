@@ -19,12 +19,25 @@
 section {
   padding-bottom: 80px;
 }
+
+section::before {
+  content: '';
+  display: block;
+  height: var(--header-height); 
+  margin-top: -var(--header-height); 
+  visibility: hidden; 
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
 }
+
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
@@ -38,6 +51,7 @@ body {
   section {
     padding-bottom: 100px;
   }
+  
   body {
     font-size: 16px;
     line-height: 1.5;

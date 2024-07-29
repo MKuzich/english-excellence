@@ -1,5 +1,5 @@
 .hero {
-  background-color: rbg(var(--white-color));
+  background-color: var(--white-color);
   background-image: url(../img/hero/mb-hero.jpg);
   border-radius: 16px;
   min-width: 320px;
@@ -10,13 +10,14 @@
   margin: 0 auto;
   height: 709px;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .hero-title {
   font-size: 38px;
   font-weight: 700;
   line-height: 105%;
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   width: 295px;
   margin-bottom: 40px;
 }
@@ -33,10 +34,10 @@
 
 .hero-container {
   position: absolute;
-  bottom: 0;
+  bottom: 72px;
 }
 
-.btn {
+.btn-hero {
   background-color: transparent;
   border: 1px solid transparent;
   font-family: 'Manrope', sans-serif;
@@ -48,13 +49,12 @@
   padding: 14px 87px;
   height: 52px;
   margin: auto;
-  display: block;
+  display: inline-flex;
   border: none;
   transition: background-color var(--anim-time);
 }
 
 .btn-accent {
-  margin-bottom: 72px;
   color: var(--white-color);
   background-color: var(--primary-color);
 }
@@ -90,6 +90,7 @@
     max-width: 768px;
     height: 704px;
     border-radius: 30px;
+    margin-bottom: 100px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -99,9 +100,9 @@
   }
 
   .hero-container {
-    position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(0, -50%);
+    padding: 0 64px;
   }
   .hero-title {
     font-size: 60px;
@@ -115,6 +116,12 @@
     width: 48px;
     height: 48px;
   }
+
+  .btn-hero {
+    font-size: 18px;
+    line-height: 156%;
+    margin-bottom: unset;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -122,7 +129,7 @@
     background-image: url(../img/hero/hero.jpg);
     max-width: 1152px;
     height: 629px;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

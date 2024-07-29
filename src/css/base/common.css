@@ -13,20 +13,23 @@
 
 .container {
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 section {
   padding-bottom: 80px;
 }
 
-section::before {
+.hero::before {
   content: '';
   display: block;
-  height: var(--header-height); 
-  margin-top: -var(--header-height); 
-  visibility: hidden; 
+  height: var(--header-height);
+  margin-top: -var(--header-height);
+  visibility: hidden;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,34 +41,57 @@ body {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-  }
+.cta-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--white-color);
 }
+
+.cta-title-highlight {
+  color: rgb(190, 232, 204);
+}
+
+.rounded-box {
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 375px) {}
+
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
     padding: 0 32px;
   }
+
   section {
     padding-bottom: 100px;
   }
-  
+
   body {
     font-size: 16px;
     line-height: 1.5;
   }
+
+  .cta-title {
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .rounded-box {
+    border-radius: 30px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
-    padding: 0 128px;
+    padding: 0 64px;
   }
+
   .hero.container,
   .cta.container {
     padding: 0 64px;
   }
+
   section {
     padding-bottom: 150px;
   }

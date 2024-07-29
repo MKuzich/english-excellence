@@ -16,9 +16,15 @@
   font-style: normal;
   color: var(--white-color);
 
+  transition: var(--background-transition);
+
   .hide {
     display: none;
   }
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
 }
 
 .menu-btn {
@@ -44,6 +50,11 @@
       width: 40px;
       height: 28px;
     }
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
 

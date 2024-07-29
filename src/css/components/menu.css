@@ -1,8 +1,9 @@
 @media only screen and (max-width: 1279px) {
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
     min-width: 240px;
     height: 100vh;
 
@@ -33,13 +34,29 @@
       line-height: 1.3;
       padding: 0;
       color: var(--white-color);
-      transition: var(--color-transition);
-
-      &:hover,
-      &:focus {
-        color: var(--light-white-color);
-      }
     }
+  }
+
+  .menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--opacity-transition);
+    z-index: 999;
+  }
+
+  .js-mobile-menu {
+    z-index: 1000;
+  }
+
+  .menu-backdrop.is-visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {

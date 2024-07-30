@@ -35,13 +35,12 @@
     position: relative;
     text-decoration: none;
     color: inherit;
-    transition: var(--color-transition, --transform-transition);
+    transition: var(--color-transition);
   }
 
   .nav-menu-item a:hover,
   .nav-menu-item a:focus {
     color: var(--primary-color);
-    transform: scale(1.02);
   }
 
   .nav-menu-item a.active::after {

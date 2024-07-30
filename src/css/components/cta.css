@@ -177,6 +177,7 @@
   .cta .cta-title {
     margin-bottom: 132px;
     max-width: 776px;
+    padding: 0;
   }
 
   .usp-wrapper::before {

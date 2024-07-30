@@ -6,13 +6,6 @@
   font-weight: 700;
   line-height: normal;
   color: var(--primary-color);
-
-  transition: var(--transform-transition);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.01);
-  }
 }
 .logo-dark {
   color: var(--black-color);

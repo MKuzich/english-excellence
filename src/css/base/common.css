@@ -22,16 +22,9 @@ section {
   padding-bottom: 80px;
 }
 
-section::before {
-  content: '';
-  display: block;
-  height: var(--header-height);
-  margin-top: -var(--header-height);
-  visibility: hidden;
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
@@ -56,7 +49,8 @@ body {
   border-radius: 16px;
 }
 
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 375px) {
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -97,12 +91,3 @@ body {
   }
 }
 
-main::before {
-  padding-top: var(--header-height);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  main::before {
-    padding-top: var(--header-height); 
-  }
-}

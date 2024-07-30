@@ -13,7 +13,6 @@
 
 .container {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -50,11 +49,15 @@ body {
 }
 
 @media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
+    width: 768px;
   }
 
   section {
@@ -78,7 +81,8 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
-    padding: 0 64px;
+    padding: 0 128px;
+    width: 1280px;
   }
 
   .hero.container,
@@ -90,4 +94,3 @@ body {
     padding-bottom: 150px;
   }
 }
-

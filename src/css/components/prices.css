@@ -54,7 +54,7 @@
 .prices-item {
     width: 336px;
     height: 400px;
-    padding: 32px;
+    padding: 40px 20px;
     background-color: var(--white-color);
     border: 1px solid var(--primary-color);
     border-radius: 30px;
@@ -66,8 +66,8 @@
 }
 
 .prices-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px ;
 }
 
 .prices-item-standard {
@@ -126,7 +126,7 @@
 }
 
 .btn-prices.btn-prices-inverse {
-    border: 1px solid var(--white-color);
+    border: 1px solid var(--button-border-color);
     color: var(--white-color);
 }
 
@@ -158,6 +158,7 @@
     .prices-item {
         width: 336px;
         height: 404px;
+        padding: 32px 16px;
     }
 
     .prices-item-price {
@@ -211,6 +212,7 @@
     .prices-item {
         width: 320px;
         height: 404px;
+        padding: 32px;
     }
 
     .prices-item-price {
@@ -225,5 +227,9 @@
     .prices-item:nth-child(2),
     .prices-item:nth-child(3) {
         order: initial;
+    }
+    
+.btn.btn-prices {
+    padding: 16px 39px;
     }
 }

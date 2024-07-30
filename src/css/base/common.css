@@ -22,7 +22,7 @@ section {
   padding-bottom: 80px;
 }
 
-.hero::before {
+section::before {
   content: '';
   display: block;
   height: var(--header-height);
@@ -94,5 +94,15 @@ body {
 
   section {
     padding-bottom: 150px;
+  }
+}
+
+main::before {
+  padding-top: var(--header-height);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  main::before {
+    padding-top: var(--header-height); 
   }
 }

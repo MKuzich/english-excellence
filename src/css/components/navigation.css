@@ -27,16 +27,15 @@
   .nav-menu-item {
     cursor: pointer;
     color: var(--black-color);
-    transition: var(--color-transition, --transform-transition);
     position: relative;
   }
-
+  
   .nav-menu-item a {
     display: inline-block;
     position: relative;
-    padding-bottom: 8px;
     text-decoration: none;
     color: inherit;
+    transition: var(--color-transition, --transform-transition);
   }
 
   .nav-menu-item a:hover,
@@ -51,7 +50,7 @@
     width: 37px;
     height: 2px;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: 0;
     background-color: var(--primary-color);
   }

@@ -37,7 +37,7 @@
     font-size: 14px;
     line-height: 171%;
     text-align: center;
-    color: rgba(18, 20, 23, 0.8);
+    color: var(--text-color-secondary);
 }
 
 .contact-info-card {
@@ -152,6 +152,10 @@
 }
 
 .contact-teacher {
+    width: 100%;
+    max-width: 335px;
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
 }
 .contact-teacher-title {
@@ -164,7 +168,6 @@
 
 
 .teacher-list {
-    margin: 0;
     margin-top: 14px;
 }
 
@@ -189,7 +192,6 @@
 
 .checkmark {
     position: absolute;
-    display: block;
     top: 0;
     left: 0;
     height: 20px;
@@ -198,26 +200,31 @@
     border: 2px solid var(--border-color);
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-    top: 3px;
-    left: 3px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
 }
+
 .teacher-list-item input:checked ~.checkmark {
     border-color: var(--primary-color);
 }
 
 .teacher-list-item input:checked ~.checkmark::after {
-    display: block ;
+    display: block;
+
 }
+
+
 
 .btn-send {
     display: block;
@@ -235,14 +242,18 @@
     color: var(--white-color);
     background-color: var(--primary-color);
     margin-top: 40px;
-    transition: var(--background-transition);
+    transition: var(--background-transition), var(--box-shadow-transition);
   
 }
 
-.btn-send:hover, .btn-send:focus {
+.btn-send:hover {
     background-color: var(--accent-color);
 }
 
+.btn-send:focus {
+    outline: none;
+    box-shadow: var(--backdrop-color) 0px 0px 0px 2px;
+}
 .form-agreement-text {
     margin-top: 16px;
 }
@@ -291,6 +302,7 @@
     .btn-send {
         margin-top: 32px;
         height: 60px;
+        font-size: 18px;
     }
     .form-agreement-text {
         max-width: 500px;

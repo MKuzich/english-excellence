@@ -6,6 +6,7 @@
   --secondary-color: #bee8cc;
   --secondary-light-color: #d4fde1;
   --text-color: rgba(18, 20, 23, 0.5);
+  --text-color-secondary: rgba(18,20,23,0.8);
   --border-color: rgba(18, 20, 23, 0.1);
   --border-hover-color: rgba(77, 194, 116, 0.1);
   --inactive-color: rgba(18, 20, 23, 0.2);
@@ -17,7 +18,6 @@
   --white-label-color: rgba(255, 255, 255, 0.6);
   --gray-color: #f3f5f6;
   --backdrop-color: rgba(18, 20, 23, 0.4);
-
   --linear-bg-gradient: linear-gradient(90deg,
       var(--primary-color),
       var(--secondary-color));

@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 32,
     slidesPerView: 1,
     grabCursor: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    //   pauseOnMouseEnter: true,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,

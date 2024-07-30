@@ -49,7 +49,8 @@
     flex-direction: column;
 }
 
-.footer .footer-menu .footer-menu-item {
+.footer .footer-menu .footer-menu-item,
+.footer .address .address-link {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
@@ -57,7 +58,9 @@
 }
 
 .footer .footer-menu .footer-menu-item:hover,
-.footer .footer-menu .footer-menu-item:focus {
+.footer .footer-menu .footer-menu-item:focus,
+.footer .address .address-link:hover,
+.footer .address .address-link:focus {
     color: var(--primary-color);
 }
 

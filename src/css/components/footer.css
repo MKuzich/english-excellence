@@ -78,6 +78,7 @@
 .footer .socials-link:hover,
 .footer .socials-link:focus {
     border: 1px solid var(--border-hover-color);
+    transition: var(--border-transition);
 }
 
 .footer .socials-link:hover .socials-icon,
@@ -87,6 +88,7 @@
 
 .footer .socials-icon {
     fill: var(--white-color);
+    transition: var(--icon-transition, --transform-transition);
 }
 .footer .footer-socials .socials-icon {
     height: 26px;
@@ -104,6 +106,11 @@
     padding: 20px 0;
     color: var(--white-label-color);
     border-top: 1px solid var(--border-white-color);
+}
+
+.footer .inner-copyright .group-link-policy {
+    display: flex;
+    gap: 18px;
 }
 
 @media only screen and (min-width: 768px) {

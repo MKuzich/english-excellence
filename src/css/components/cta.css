@@ -6,7 +6,7 @@
 
 .cta .content-wrapper {
   position: relative;
-  background: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%);
+  background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
   padding: 40px 20px 64px;
   z-index: 0;
   overflow: hidden;
@@ -26,7 +26,7 @@
 .usp-wrapper::after {
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -167,6 +167,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .cta .container {
+    padding: 0 64px;
+  }
   .cta .content-wrapper {
     padding: 64px 64px 140px;
   }
@@ -174,6 +177,7 @@
   .cta .cta-title {
     margin-bottom: 132px;
     max-width: 776px;
+    padding: 0;
   }
 
   .usp-wrapper::before {

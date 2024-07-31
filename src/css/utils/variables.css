@@ -18,6 +18,8 @@
   --white-label-color: rgba(255, 255, 255, 0.6);
   --gray-color: #f3f5f6;
   --backdrop-color: rgba(18, 20, 23, 0.4);
+  --button-border-color: rgba(255, 255, 255, 0.40);
+
   --linear-bg-gradient: linear-gradient(90deg,
       var(--primary-color),
       var(--secondary-color));

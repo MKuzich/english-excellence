@@ -47,7 +47,7 @@
   height: 52px;
   margin: auto;
   border: none;
-  transition: background-color var(--anim-time);
+  transition: var(--background-transition);
   white-space: nowrap;
 }
 

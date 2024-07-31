@@ -50,7 +50,9 @@
 }
 
 .footer .footer-menu .footer-menu-item,
-.footer .address .address-link {
+.footer .address .address-link,
+.footer .phone .phone-number,
+.footer .copyright .group-link-policy .link-policy {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
@@ -60,7 +62,11 @@
 .footer .footer-menu .footer-menu-item:hover,
 .footer .footer-menu .footer-menu-item:focus,
 .footer .address .address-link:hover,
-.footer .address .address-link:focus {
+.footer .address .address-link:focus,
+.footer .phone .phone-number:hover,
+.footer .phone .phone-number:focus,
+.footer .copyright .group-link-policy .link-policy:hover,
+.footer .copyright .group-link-policy .link-policy:focus {
     color: var(--primary-color);
 }
 
@@ -143,7 +149,7 @@
 
     .footer-navigation {
         display: inline-flex;
-        margin-left: 153px;
+        margin-left: 152px;
     }
 
     .footer .footer-socials {

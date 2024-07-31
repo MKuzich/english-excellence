@@ -32,18 +32,25 @@
   width: 100%;
   height: 100%;
   border-radius: 16px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .usp-wrapper::before {
   background-color: var(--secondary-light-color);
-  transform: rotate(-9deg);
   z-index: -2;
+}
+
+.usp-wrapper.start::before {
+  transform: rotate(-9deg);
 }
 
 .usp-wrapper::after {
   background-color: var(--white-half-transparent);
-  transform: rotate(11deg);
   z-index: -3;
+}
+
+.usp-wrapper.start::after {
+  transform: rotate(11deg);
 }
 
 .usps-description {
@@ -113,11 +120,11 @@
     border-radius: 30px;
   }
 
-  .usp-wrapper::before {
+  .usp-wrapper.start::before {
     transform: rotate(-9.86deg);
   }
 
-  .usp-wrapper::after {
+  .usp-wrapper.start::after {
     transform: rotate(10.65deg);
   }
 
@@ -180,11 +187,11 @@
     padding: 0;
   }
 
-  .usp-wrapper::before {
+  .usp-wrapper.start::before {
     transform: rotate(-8deg);
   }
 
-  .usp-wrapper::after {
+  .usp-wrapper.start::after {
     transform: rotate(11deg);
   }
 

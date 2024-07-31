@@ -52,8 +52,8 @@
 }
 
 .prices-item {
-    width: 336px;
-    height: 400px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 40px 20px;
     background-color: var(--white-color);
     border: 1px solid var(--primary-color);
@@ -113,7 +113,6 @@
     align-self: center;
     margin-top: auto;
     display: inline-flex;
-    padding: 14px 78px;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -123,12 +122,25 @@
     color: var(--white-color);
     background-color: var(--primary-color);
     white-space: nowrap;
+    padding: 14px;
+    width: 100%;
 }
 
 .btn-prices.btn-prices-inverse {
     border: 1px solid var(--button-border-color);
     color: var(--white-color);
 }
+
+@media screen and (min-width: 375px){
+    .prices-item {
+        min-height: 400px;
+    }
+
+    .btn-prices {
+        padding: 14px 78px;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .our-lessons-wrapper {
@@ -156,8 +168,7 @@
     }
 
     .prices-item {
-        width: 336px;
-        height: 404px;
+        min-height: 404px;
         padding: 32px 16px;
     }
 
@@ -210,8 +221,6 @@
     }
 
     .prices-item {
-        width: 320px;
-        height: 404px;
         padding: 32px;
     }
 

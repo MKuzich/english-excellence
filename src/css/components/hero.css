@@ -25,7 +25,7 @@
 }
 
 .hero-container {
-  padding-top: 425px;
+  padding: 425px 20px 0;
 }
 
 .btn-hero {
@@ -95,7 +95,7 @@
   }
 
   .hero-container {
-    padding-top: 260px;
+    padding: 260px 32px 0;
   }
 
   .hero-title {

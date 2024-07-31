@@ -1,5 +1,4 @@
 .logo {
-  margin-right: 76px;
   font-family: inherit;
   font-size: 20px;
   font-style: normal;
@@ -12,4 +11,10 @@
 }
 .logo-light {
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .logo {
+    margin-right: 138px;
+  }
 }

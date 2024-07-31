@@ -52,7 +52,7 @@
 }
 
 .feature {
-  background: var(--gray-color);
+  background-color: var(--gray-color);
   border-radius: 16px;
   padding: 32px;
 
@@ -94,54 +94,53 @@
 
 .about-image {
   width: 100%;
-  height: 211px;
-  background: var(--primary-color) url('/img/about/about.png') no-repeat center center;
+  height: 313px;
+  background-image: url('/img/about/about.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--primary-color);
   background-size: contain;
   border-radius: 16px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-    .about-image {
-      background-image:  var(--primary-color) url('/img/about/about@2x.png') no-repeat center center;
-    }
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .about-image {
+    background-image: url('/img/about/about@2x.png');
   }
+}
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-    .hero {
-        
-        background:  var(--primary-color) url("/img/about/about@2x.png'") no-repeat center center;
-        background-size: cover;
-    }
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .about-image {
+    background-image: url('/img/about/about@2x.png');
+  }
 }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-(min-width: 768px) and (min--moz-device-pixel-ratio: 2),
-(min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
-(min-width: 768px) and (min-device-pixel-ratio: 2),
-(min-width: 768px) and (min-resolution: 192dpi),
-(min-width: 768px) and (min-resolution: 2dppx) {
-    .hero {
-        background:  var(--primary-color) url("/img/about/about@2x.png'") no-repeat center center;
-        background-size: cover;
-    }
+  (min-width: 768px) and (min--moz-device-pixel-ratio: 2),
+  (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+  (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .about-image {
+    background-image: url('/img/about/about@2x.png');
+  }
 }
 
-
-@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
-(min-width: 1024px) and (min--moz-device-pixel-ratio: 2),
-(min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1),
-(min-width: 1024px) and (min-device-pixel-ratio: 2),
-(min-width: 1024px) and (min-resolution: 192dpi),
-(min-width: 1024px) and (min-resolution: 2dppx) {
-    .hero {
-        background:  var(--primary-color) url("/img/about/about@2x.png'") no-repeat center center;
-        background-size: cover;
-    }
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min--moz-device-pixel-ratio: 2),
+  (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1),
+  (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-image {
+    background-image: url('/img/about/about@2x.png');
+  }
 }
 
 @media (min-width: 768px) {
@@ -151,7 +150,7 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .about-image {
-    padding: 16px 0;
+    height: 243px;
   }
 
   .about-wrapper {
@@ -163,7 +162,7 @@ only screen and (min-resolution: 2dppx) {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .about-image {
     max-width: 310px;
     height: auto;

@@ -57,7 +57,7 @@
 }
 
 .video-toggle {
-  display: none; /* Сховати чекбокси */
+  display: none; 
 }
 
 .teachers-img {
@@ -74,16 +74,16 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0); /* Центрує відео по горизонталі */
-  width: 150px; /* Відповідно до розмірів зображення */
-  height: 150px; /* Відповідно до розмірів зображення */
+  transform: translate(-50%, 0); 
+  width: 150px; 
+  height: 150px; 
   border-radius: 50%;
-  object-fit: cover; /* Заповнює область без зміщення співвідношення сторін */
-  display: none; /* Сховати відео за замовчуванням */
+  object-fit: cover;
+  display: none; 
 }
 
 .video-toggle:checked + .teachers-img-label + .teachers-video {
-  display: block; /* Показати відео при натисканні на зображення */
+  display: block;
 }
 
 .teachers-headers {

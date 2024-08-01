@@ -27,23 +27,44 @@ mobileMenuRefs.openMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuRefs.closeMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuRefs.backdrop.addEventListener('click', toggleMenu);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-menu-item a');
+const navLinks = document.querySelectorAll('.nav-menu-item a');
+function setActiveLink(val) {
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+  });
 
-  function setActiveLink() {
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-    });
+  const activeLink = Array.from(navLinks).find(
+    link => link.getAttribute('href') === val
+  );
 
-    const activeLink = Array.from(navLinks).find(
-      link => link.getAttribute('href') === window.location.hash
-    );
-
-    if (activeLink) {
-      activeLink.classList.add('active');
-    }
+  if (activeLink) {
+    activeLink.classList.add('active');
   }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('hashchange', () =>
+    setActiveLink(window.location.hash)
+  );
+  setActiveLink(window.location.hash);
+});
 
-  window.addEventListener('hashchange', setActiveLink);
-  setActiveLink();
+const handleIntersection = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setActiveLink(`#${entry.target.id}`);
+    }
+  });
+};
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5,
+};
+
+const observer = new IntersectionObserver(handleIntersection, options);
+
+const sections = document.querySelectorAll('section');
+sections.forEach(section => {
+  observer.observe(section);
 });

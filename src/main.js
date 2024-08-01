@@ -6,7 +6,7 @@ import './js/numberAnimation.js';
 import './js/scrollToTop.js';
 import './js/writeTitle.js';
 import './js/cta-animation.js';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 AOS.init();

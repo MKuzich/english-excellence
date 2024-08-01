@@ -87,7 +87,7 @@
   width: 152px;
   height: 152px;
   border-radius: 100%;
-  box-shadow: 0 2px 0 0 rgba(225, 131, 194, 0.25), 0 -2px 0 0 rgba(165, 181, 222, 0.25), 2px 0 0 0 rgba(225, 131, 194, 0.25), -2px 0 0 0 rgba(165, 181, 222, 0.25), 2px -2px 0 0 rgba(195, 156, 208, 0.5), -2px 2px 0 0 rgba(195, 156, 208, 0.5), 2px 2px 0 0 rgba(255, 105, 180, 0.75), -2px -2px 0 0 rgba(135, 206, 235, 0.75);
+  box-shadow: 0 2px 0 0 rgba(212, 253, 225, 0.25), 0 -2px 0 0 rgba(168, 230, 160, 0.25), 2px 0 0 0 rgba(219, 229, 27, 0.25), -2px 0 0 0 rgba(192, 244, 7, 0.25), 2px -2px 0 0 rgba(212, 253, 225, 1), -2px 2px 0 0 rgba(233, 236, 188, 0.5), 2px 2px 0 0 rgba(212, 253, 225, 1), -2px -2px 0 0 rgba(77, 194, 116, 0.75);
   animation: rotateThis 2s linear infinite;
 }
 
@@ -98,7 +98,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
   cursor: pointer;
 }
 
@@ -204,7 +203,7 @@
 }
 
 .button.is-play {
-  background-color: rgba(255, 255, 250, 0.7);
+  background-color: rgba(255, 255, 250, 0.045);
   border-radius: 50%;
   width: 80px;
   height: 80px;

@@ -6,9 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
     '--header-height',
     `${headerHeight}px`
   );
-
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => {
-    section.style.paddingTop = `${headerHeight}px`;
-  });
 });

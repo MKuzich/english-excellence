@@ -37,6 +37,7 @@
 @keyframes minus {
   0% {
     transform: translateX(30vw) translateY(-10vh) rotate(-9deg);
+    opacity: 0;
   }
 
   30% {
@@ -49,6 +50,7 @@
 
   100% {
     transform: translateX(0vw) translateY(0vh) rotate(-9deg);
+    opacity: 1;
   }
 }
 

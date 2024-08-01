@@ -34,28 +34,24 @@
   margin-left: auto;
   background-color: transparent;
   stroke: var(--black-color);
-
-  svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  &:hover {
-    background-color: transparent;
-  }
 }
-
+.menu-btn svg {
+  width: 32px;
+  height: 32px;
+}
+.menu-btn:hover {
+  background-color: transparent;
+}
 @media screen and (min-width: 768px) {
   .menu-btn {
     min-width: 40px;
     min-height: 28px;
-
-    svg {
-      width: 40px;
-      height: 28px;
-    }
   }
 
+  .menu-btn svg {
+    width: 40px;
+    height: 28px;
+  }
   .btn {
     font-size: 18px;
     line-height: 1.56;

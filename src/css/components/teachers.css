@@ -1,6 +1,5 @@
 .teachers-title {
   margin-bottom: 16px;
-
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -30,7 +29,6 @@
   max-width: 647px;
   margin: 0 auto;
   margin-bottom: 40px;
-
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -47,9 +45,45 @@
 }
 
 .teachers-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.teachers-img-label {
+  display: block;
+  cursor: pointer;
+}
+
+.video-toggle {
+  display: none; /* Сховати чекбокси */
+}
+
+.teachers-img {
+  position: relative;
+  display: block;
+}
+
+.teachers-img img {
+  border-radius: 50%;
+  display: block;
+}
+
+.teachers-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0); /* Центрує відео по горизонталі */
+  width: 150px; /* Відповідно до розмірів зображення */
+  height: 150px; /* Відповідно до розмірів зображення */
+  border-radius: 50%;
+  object-fit: cover; /* Заповнює область без зміщення співвідношення сторін */
+  display: none; /* Сховати відео за замовчуванням */
+}
+
+.video-toggle:checked + .teachers-img-label + .teachers-video {
+  display: block; /* Показати відео при натисканні на зображення */
 }
 
 .teachers-headers {
@@ -59,7 +93,6 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--black-color);
-
   margin-top: 16px;
   margin-bottom: 8px;
 }
@@ -72,25 +105,17 @@
   color: var(--text-color);
 }
 
-.teachers-img {
-  border-radius: 50%;
-}
-
-/* Adaptive */
-
-/* Tb  */
 @media only screen and (min-width: 768px) {
   .teachers-list {
     flex-direction: unset;
     flex-wrap: wrap;
     gap: 32px;
     max-width: 576px;
-
     margin: 0 auto;
   }
 
   .teachers-item {
-    height: 318px;
+    height: auto;
     width: 272px;
   }
 
@@ -112,7 +137,6 @@
   }
 }
 
-/* PC */
 @media only screen and (min-width: 1158px) {
   .teachers-list {
     flex-direction: row;
@@ -123,7 +147,6 @@
 
   .teachers-title {
     margin-bottom: 16px;
-
     font-size: 40px;
     line-height: 1.2;
   }
@@ -132,7 +155,6 @@
     max-width: 709px;
     margin: 0 auto;
     margin-bottom: 64px;
-
     font-size: 18px;
     line-height: 1.67;
   }

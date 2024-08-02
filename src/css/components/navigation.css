@@ -29,7 +29,7 @@
     color: var(--black-color);
     position: relative;
   }
-  
+
   .nav-menu-item a {
     display: inline-block;
     position: relative;
@@ -42,7 +42,14 @@
   .nav-menu-item a:focus {
     color: var(--primary-color);
   }
-
+  @keyframes scaleRight {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
   .nav-menu-item a.active::after {
     content: '';
     display: block;
@@ -52,5 +59,7 @@
     bottom: -8px;
     left: 0;
     background-color: var(--primary-color);
+    animation: scaleRight 0.3s forwards;
+    transform-origin: left;
   }
 }

@@ -18,7 +18,7 @@ function setupNumberAnimation(targetSelector) {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateNumber(target, 0, parseInt(target.textContent, 10), 5000);
+                animateNumber(target, 500, parseInt(target.textContent, 10), 1000);
                 observer.disconnect();
             }
         });

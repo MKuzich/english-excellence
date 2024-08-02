@@ -12,11 +12,14 @@
 
 .nav-menu-item {
   display: block;
-  padding: 24px 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.3;
+}
+
+.nav-menu-item a {
+  padding: 24px 0;  
 }
 
 @media screen and (min-width: 1280px) {
@@ -56,7 +59,7 @@
     width: 37px;
     height: 2px;
     position: absolute;
-    bottom: -8px;
+    bottom: 16px;
     left: 0;
     background-color: var(--primary-color);
     animation: scaleRight 0.3s forwards;

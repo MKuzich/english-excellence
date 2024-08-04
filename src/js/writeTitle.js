@@ -1,44 +1,33 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const titleElement = document.querySelector('.hero-title');
-//   const highlightElement = document.querySelector('.hero-title-highlight');
+document.addEventListener('DOMContentLoaded', function () {
+  function stepAnimateText(element, animation, delay) {
+    const el = document.querySelector(element);
+    const nodes = Array.from(el.childNodes);
+    el.innerHTML = '';
+    let totalDelay = 0;
 
-//   const mainText = 'Discover the joy of learning ';
-//   const highlightedText = 'English';
-//   const endText = ' with us!';
+    const animateNode = (node, parent) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const txt = node.textContent.replace(/\s+/g, ' ');
+        for (let i = 0; i < txt.length; i++) {
+          const character = txt.charAt(i);
+          const span = document.createElement('span');
+          span.className = animation;
+          span.style.animationDelay = `${totalDelay}s`;
+          span.textContent = character;
+          parent.appendChild(span);
+          totalDelay += delay;
+        }
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const clonedNode = node.cloneNode();
+        parent.appendChild(clonedNode);
+        Array.from(node.childNodes).forEach(innerNode =>
+          animateNode(innerNode, clonedNode)
+        );
+      }
+    };
 
-//   let mainIndex = 0;
-//   let highlightIndex = 0;
-//   let endIndex = 0;
+    nodes.forEach(node => animateNode(node, el));
+  }
 
-//   function printTitle() {
-//     if (mainIndex < mainText.length) {
-//       titleElement.innerHTML = mainText.substring(0, mainIndex + 1);
-//       mainIndex++;
-//     } else if (highlightIndex < highlightedText.length) {
-//       highlightElement.innerHTML = highlightedText.substring(
-//         0,
-//         highlightIndex + 1
-//       );
-//       highlightIndex++;
-//     } else if (endIndex < endText.length) {
-//       titleElement.innerHTML =
-//         mainText +
-//         `<span class="cta-title-highlight">${highlightedText}</span>` +
-//         endText.substring(0, endIndex + 1);
-//       endIndex++;
-//     }
-
-//     if (
-//       mainIndex < mainText.length ||
-//       highlightIndex < highlightedText.length ||
-//       endIndex < endText.length
-//     ) {
-//       setTimeout(printTitle, 100);
-//     }
-//   }
-
-//   titleElement.innerHTML = '';
-//   highlightElement.innerHTML = '';
-
-//   printTitle();
-// });
+  stepAnimateText('.hero-title', 'customAppearing', 0.05);
+});

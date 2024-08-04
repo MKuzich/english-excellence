@@ -35,3 +35,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+[data-aos^='fade'][data-aos^='fade'].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+body[data-aos-easing='ease'] [data-aos] {
+  transition-timing-function: ease;
+}
+body[data-aos-duration='400'] [data-aos] {
+  transition-duration: 0.4s;
+}
+[data-aos^='fade'][data-aos^='fade'] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos='fade-up'] {
+  transform: translate3d(0, 100px, 0);
+}

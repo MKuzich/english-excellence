@@ -41,12 +41,6 @@ function setActiveLink(val) {
     activeLink.classList.add('active');
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('hashchange', () =>
-    setActiveLink(window.location.hash)
-  );
-  setActiveLink(window.location.hash);
-});
 
 const handleIntersection = (entries, observer) => {
   entries.forEach(entry => {
@@ -63,8 +57,27 @@ const options = {
 };
 
 const observer = new IntersectionObserver(handleIntersection, options);
-
 const sections = document.querySelectorAll('section');
-sections.forEach(section => {
-  observer.observe(section);
+
+const deleteSectionsObserver = () =>
+  sections.forEach(section => {
+    observer.unobserve(section);
+  });
+
+const addSectionsObserver = () =>
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+addSectionsObserver();
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('hashchange', () => {
+    deleteSectionsObserver();
+    setActiveLink(window.location.hash);
+    setTimeout(() => {
+      addSectionsObserver();
+    }, 750);
+  });
+  setActiveLink(window.location.hash);
 });
